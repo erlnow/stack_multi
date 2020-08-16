@@ -1,5 +1,11 @@
 #!/usr/bin/env stack
--- stack --resolver lts-6.25 script --package turtle
+{- stack
+    script
+    --resolver lts-6.25
+    --package turtle
+    --package "stm async"
+    --package http-client,http-conduit
+-}
 {-# LANGUAGE OverloadedStrings #-}
 import Turtle
 main = echo "Hello World!"
